@@ -38,3 +38,11 @@ $("#header").prepend(formattedName);
 var mobile = bio.contacts.mobile;
 var formattedMobile = HTMLmobile.replace("%data%", mobile);
 $("#topContacts").append(formattedMobile);
+
+var email = bio.contacts.email;
+var formattedEmail = HTMLemail.replace("%data%", email);
+$("#topContacts").append(formattedEmail);
+
+var github = bio.contacts.github;
+var formattedGithub = HTMLgithub.replace("%data%", github);
+$("#topContacts").append(formattedGithub);
