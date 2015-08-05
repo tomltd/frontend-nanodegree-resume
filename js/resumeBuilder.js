@@ -11,7 +11,7 @@ var bio = {
     "name" : "Tom Freestone",
     "role": "Web Developer",
     "contacts": {
-        "mobile": "+44 07941 244 293",
+        "mobile": "+44 7941 244 293",
         "email": "tomfreestone@gmail.com",
         "github": "tomltd",
         "twitter": "@tomltd",
@@ -46,3 +46,8 @@ $("#topContacts").append(formattedEmail);
 var github = bio.contacts.github;
 var formattedGithub = HTMLgithub.replace("%data%", github);
 $("#topContacts").append(formattedGithub);
+
+var twitter = bio.contacts.twitter;
+var formattedTwitter = HTMLtwitter.replace("%data%", twitter);
+$("#topContacts").append(formattedTwitter);
+
