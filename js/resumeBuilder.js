@@ -15,7 +15,7 @@ var bio = {
         "email": "tomfreestone@gmail.com",
         "github": "tomltd",
         "twitter": "@tomltd",
-        "location": "Norwich"
+        "location": "Norwich UK"
 },
     "welcomeMessage": "Front-End Developer looking for exciting projects",
     "skills":
@@ -71,18 +71,68 @@ $("#header").prepend(formattedBioPic);
 
 // Next Quiz
 
+var work =
+ {
+	"jobs": [
+	{
+		"employer" : "University of East Anglia",
+		"title" : "Web Administrator",
+		"dates" : "December 2013 - Present",
+		"location" : "Norwich UK",
+		"description" : "Administrating and Designing various University websites"
+		},
+		{
+		"employer" : "Amnesty International",
+		"title" : "Technical Assistant",
+		"dates" : "April 2009 - December 2013",
+		"location:" : "London UK",
+		"description" : "Supporting the Web Development Team"	
+		}
+		]	
+
+}
+
+var education =
+{
+    "schools": [
+        {
+            "name" : "University of East Anglia",
+            "location" : "Norwich UK",
+            "degree" : "Computer Science BSc",
+            "majors" : "Computer Sciences",
+            "dates" : "062003",
+            "url" : "http://uea.ac.uk"
+        }
+        ],
+    "onlineCourses":[
+        {
+        "title" : "FrontEnd Web Development",
+        "school" : "udacity",
+        "date" : "122015",
+        "url" : "http://udacity.com"
+        }
+        ]    
+}
+
+
 // Add multiple jobs to this
-var work = {
+/*var work = {"uea":{
             "employer" : "University of East Anglia",
             "location" : "Norwich",
+},
+"amnesty":{
+    "employer" : "Amnesty International",
+    "location" : "London"
 }
+}*/
 //var work.employer = "University of East Anglia";
 //employer = work.employer;
 //var formattedEmployer = HTMLworkEmployer.replace("%data%", employer);
 $("#workExperience").append(HTMLworkStart);
 //$("#workExperience").append(employer);
 
-var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
+var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+//var formattedEmployer = HTMLworkEmployer.replace("%data%", work.uea.employer);
 $(".work-entry:last").append(formattedEmployer);
 // add proper object with different jobs
 
